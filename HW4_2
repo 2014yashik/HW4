@@ -1,0 +1,18 @@
+#include <iostream>
+using namespace std;
+int main (){
+int n = 2000;
+int i=0;
+char *arr = new char[n];
+cin>>arr;
+int k;
+for (i=0;i<n; i++) 
+{
+  if (arr[i] == 'w' ){
+    k = k + 1;
+  }    
+}
+cout << k << " letters w";
+delete[] arr;
+return 0;
+}
